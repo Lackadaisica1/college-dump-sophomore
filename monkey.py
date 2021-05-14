@@ -34,10 +34,10 @@ def check_string(string):
 def main():
     start = time.time()
 
-    string = generate_string
+    string = generate_string()
 
     while check_string(string):
-        mate = 0
+        string = generate_string()
 
     end = time.time()
 
